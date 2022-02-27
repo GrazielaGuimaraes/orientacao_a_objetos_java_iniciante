@@ -33,5 +33,17 @@ public class Usuario extends Pessoa{
         System.out.println("Telefone: " + this.getTelefone());
         System.out.println("Endereço: " + this.getEndereco());
     }
+
+
+    //Utiliza-se a notação @override 
+    @Override
+    public void polimorfismo(){
+        
+        //Mostrará a mensagem que está na classe pessoa
+        super.polimorfismo();//classe mãe
+        
+        System.out.println("Esta é a mensagem da classe filha usuário, utilizando polimorfismo");
+        
+    }
     
 }

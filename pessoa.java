@@ -54,6 +54,12 @@ public class Pessoa {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
+
+     public void polimorfismo(){
+    
+        System.out.println("As classes filhas herdarão este método, porém, seu conteúdo interno poderá ser alterado.");
+    
+    }
     
  
     

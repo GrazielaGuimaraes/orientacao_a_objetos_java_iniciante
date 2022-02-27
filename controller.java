@@ -1,7 +1,9 @@
 ﻿package controles;
 
+
 import modelos.Cliente;
 import modelos.Usuario;
+
 
 /**
  *
@@ -11,6 +13,11 @@ public class ClasseController {
     
     public static void main(String[] args) {
         
+        
+      
+        
+        
+  
         Usuario usuario = new Usuario();
         
         //Atributos herdados da classe mãe
@@ -27,9 +34,13 @@ public class ClasseController {
         //Chama o métodos que lista no console o contéudo dos atributos de usuario
         usuario.mostraDados();
         
+        /*******Utilizando polimorfismo com a classe Usuário********/
+        usuario.polimorfismo();        
         
         
-        /****Intância de cliente*/
+        
+        
+        /*******************Intância de cliente*****************************/
         Cliente cliente = new Cliente();
         
         //Atributos herdados da classe mãe
@@ -42,7 +53,7 @@ public class ClasseController {
         //Atributos específicos da classe filha
         cliente.setStatusCliente(true);
         
-        System.out.println("\n/********Mostrando os dados de cliente no console********/\n");
+        System.out.println("\n/********Mostrando os dados de cliente no console*******\n");
         System.out.println("Nome do cliente: " + cliente.getNome());
         System.out.println("Telefone do cliente: " + cliente.getTelefone());
         System.out.println("Email do cliente: " + cliente.getEmail());
@@ -57,6 +68,10 @@ public class ClasseController {
         }else{
             System.out.println("Status do cliente atualizado: Inativo" );
         }
+        
+        
+        /*******Utilizando polimorfismo com a classe Cliente********/
+        cliente.polimorfismo();
         
     }
     
