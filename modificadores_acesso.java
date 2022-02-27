@@ -1,4 +1,4 @@
-﻿package atributosModificadores
+﻿package modelos
 
 /**
  *
@@ -7,8 +7,13 @@
 
 public class ModificadoresDeAcesso {
     
+    // Visível a todas as classes
     public String publico;
+
+    // Visível a classes do mesmo pacote
     protected String protegido;
+
+    // Visível apenas pela própria classe
     private String privado;
 
     public String getPublico() {
